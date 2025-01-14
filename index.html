@@ -5,49 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pagination</title>
   </head>
-  <body>
-    <div class="h-screen bg-red-500 flex justify-center items-end">
+  <body class="bg-gray-300 overflow-hidden">
+    <div class="h-screen mt-10 flex flex-col">
+      <div class="pl-7 text-lg font-semibold md:self-center md:text-2xl">
+        <h1>Comments</h1>
+      </div>
       <div
-        class="bg-white flex mb-24 px-5 py-4 gap-6 rounded-full shadow-lg shadow-black/30"
+        class="pageContent flex flex-col md:justify-center md:items-center gap-2 text-lg font-bold text-gray-800 px-3 pt-2 rounded-lg"
+      ></div>
+      <div
+        class="bg-white self-center flex mt-6 px-3 py-2 sm:py-3 gap-1 min-[400px]:gap-2 min-[540px]:gap-3 rounded-full shadow-md shadow-black/20"
       >
         <button
-          class="px-4 py-2 rounded-full shadow-md shadow-red-400/50 text-red-500 font-bold text-lg"
+          class="prevBtn px-4 py-2 rounded-full border border-blue-400 hover:bg-blue-500 hover:text-white shadow-md shadow-blue-400/50 text-blue-500 font-bold text-lg"
         >
           <
         </button>
         <button
-          class="px-5 py-3 rounded-full shadow-md shadow-red-400/50 text-red-500 font-semibold"
+          class="pageBtn px-5 py-3 rounded-full border border-blue-400 shadow-md shadow-blue-400/50 text-blue-500 font-semibold"
         >
           1
         </button>
         <button
-          class="px-5 py-3 rounded-full shadow-md shadow-red-400/50 text-red-500 font-semibold"
+          class="pageBtn px-5 py-3 rounded-full border border-blue-400 shadow-md shadow-blue-400/50 text-blue-500 font-semibold"
         >
           2
         </button>
         <button
-          class="px-5 py-3 rounded-full shadow-md shadow-red-400/50 text-red-500 font-semibold"
+          class="pageBtn px-5 py-3 rounded-full border border-blue-400 shadow-md shadow-blue-400/50 text-blue-500 font-semibold"
         >
           3
         </button>
         <button
-          class="px-5 py-3 rounded-full shadow-md shadow-red-400/50 text-red-500 font-semibold"
+          class="pageBtn px-5 py-3 rounded-full border border-blue-400 shadow-md shadow-blue-400/50 text-blue-500 font-semibold"
         >
           4
         </button>
+
         <button
-          class="px-5 py-3 rounded-full shadow-md shadow-red-400/50 text-red-500 font-semibold"
-        >
-          5
-        </button>
-        <button
-          class="px-4 py-2 rounded-full shadow-md shadow-red-400/50 text-red-500 font-bold text-lg"
+          class="nextBtn px-4 py-2 rounded-full border border-blue-400 hover:bg-blue-500 hover:text-white shadow-md shadow-blue-400/50 text-blue-500 font-bold text-lg"
         >
           >
         </button>
       </div>
     </div>
-
+    <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
